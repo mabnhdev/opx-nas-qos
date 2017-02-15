@@ -27,7 +27,7 @@ import sys
 import syslog
 
 dbg_on = False
-target_cfg_path = '/etc/opx'
+target_cfg_path = '%s/etc/opx' % os.environ.get("OPX_INSTALL_PATH","")
 err_detected = False
 
 
